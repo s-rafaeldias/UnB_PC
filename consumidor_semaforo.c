@@ -31,6 +31,7 @@ void* consumidor() {
         sem_post(&empty);
         sleep(3);
     }
+    pthread_exit(0);
 }
 
 void* produtor() {
@@ -43,6 +44,7 @@ void* produtor() {
         sem_post(&full);
         sleep(5);
     }
+    pthread_exit(0);
 }
 
 int main() {
