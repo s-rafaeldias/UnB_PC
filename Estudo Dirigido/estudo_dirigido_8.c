@@ -42,7 +42,6 @@ void* soma_linha(void* id){
 
 void soma_porra_toda() {
 
-
     for (int i = 0; i < L; i++) {
         soma_matriz += array[i];
     }
